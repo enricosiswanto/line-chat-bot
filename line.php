@@ -70,7 +70,6 @@
         }
 
         public function getUserId(){
-            error_log('User Id: '.$this->getData()['source']['userId']);
             return $this->getData()['source']['userId'];
         }
 
