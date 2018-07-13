@@ -16,7 +16,7 @@
  */
 
     require_once('line.php');
-
+    
     $channelToken = ''; //Put your line channel token here
     $channelSecret = ''; //Put your channel secret here
 
