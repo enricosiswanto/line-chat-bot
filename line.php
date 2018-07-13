@@ -3,7 +3,7 @@
  * getting profile, and sending reply message from and to LINE Messaging API
  * 
  * @copyright Copyright (c) 2018, Enrico Siswanto
- * @version 1.2
+ * @version 1.3
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal

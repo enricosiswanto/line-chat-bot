@@ -2,7 +2,7 @@
 /** This is a PHP script for handling events from LINE Messaging API, 
  * 
  * @copyright Copyright (c) 2018, Enrico Siswanto
- * @version 1.2
+ * @version 1.3
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -21,8 +21,6 @@
     $channelSecret = ''; //Put your channel secret here
 
     $bot = new lineBot($channelToken, $channelSecret); //Create object for lineBot class function
-
-    $msgString = explode(' ', $bot->getMsgText());
 
     if($bot->getEventType()=='message'){ //Event when someone sending a message to your line bot
         if($bot->getMsgType()=='text'){
