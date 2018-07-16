@@ -3,7 +3,7 @@
  * getting profile, and sending reply message from and to LINE Messaging API
  * 
  * @copyright Copyright (c) 2018, Enrico Siswanto
- * @version 1.3
+ * @version 1.4
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -104,6 +104,22 @@
 
         public function getMsgText(){
             return strtolower($this->getData()['message']['text']);
+        }
+
+        public function getLocTitle(){
+            return $this->getData()['message']['title'];
+        }
+
+        public function getLocAddress(){
+            return $this->getData()['message']['address'];
+        }
+
+        public function getLocLatitude(){
+            return $this->getData()['message']['latitude'];
+        }
+
+        public function getLocLongitude(){
+            return $this->getData()['message']['longitude'];
         }
 
         public function getDisplayName(){
